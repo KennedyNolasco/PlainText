@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PlainText</string>
+    <string name="configura_es">Configurações</string>
+    <string name="sobre">Sobre</string>
+    <string name="senha">Senha:</string>
+    <string name="salvar_informa_o_de_login">Salvar informação de login</string>
+    <string name="entrar">Entrar</string>
+    <string name="digite_suas_credenciais_para_continuar">Digite suas credenciais para continuar!</string>
+    <string name="login">Login:</string>
+    <string name="quot_gerenciador_de_senha_bom_da_peste_quot">\"Gerenciador de senha bom da peste\"</string>
+    <string name="lyana">- Lyana</string>
+    <string name="logo_de_uma_chave">Logo de uma chave</string>
+</resources>
