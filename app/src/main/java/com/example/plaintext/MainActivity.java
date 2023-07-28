@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editLogin =  findViewById(R.id.editLogin);
         EditText editPass  =  findViewById(R.id.editPassword);
         Button botao = findViewById(R.id.botão);
+
         if(prefLogin==true){
             Log.i("BOTAO","BOTAO TA LIGADO");
              editLogin.setText(sharedPreferences.getString("login", ""));

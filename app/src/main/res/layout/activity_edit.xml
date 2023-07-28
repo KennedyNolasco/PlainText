@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="Senha"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addName"
+        style="@style/Widget.TipTime.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Nome"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageName"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <EditText
+        android:id="@+id/addLogin"
+        style="@style/Widget.TipTime.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="26dp"
+        android:hint="Login"
+        app:layout_constraintEnd_toEndOf="@+id/addName"
+        app:layout_constraintStart_toEndOf="@+id/imageLogin"
+        app:layout_constraintTop_toBottomOf="@+id/addName" />
+
+    <EditText
+        android:id="@+id/addPassword"
+        style="@style/Widget.TipTime.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="26dp"
+        android:hint="Senha"
+        app:layout_constraintEnd_toEndOf="@+id/addLogin"
+        app:layout_constraintStart_toEndOf="@+id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@+id/addLogin" />
+
+    <EditText
+        android:id="@+id/addNotes"
+        style="@style/Widget.TipTime.TextView"
+        android:layout_width="0dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginTop="22dp"
+        android:gravity="top"
+        android:hint="Notas"
+        app:layout_constraintEnd_toEndOf="@+id/addPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageNotes"
+        app:layout_constraintTop_toBottomOf="@+id/addPassword" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-150dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNotes" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#DF0F0F"
+        android:text="Deletar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNotes" />
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addName"
+        app:srcCompat="@drawable/ic_note" />
+
+    <ImageView
+        android:id="@+id/imageNotes"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addNotes"
+        app:srcCompat="@drawable/ic_text" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addPassword"
+        app:srcCompat="@drawable/ic_key" />
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addLogin"
+        app:srcCompat="@drawable/ic_user" />
+</androidx.constraintlayout.widget.ConstraintLayout>

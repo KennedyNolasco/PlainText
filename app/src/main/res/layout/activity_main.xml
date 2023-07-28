@@ -88,8 +88,9 @@
         android:layout_height="136dp"
         android:background="#A4CC44"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        android:
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
 
         <TextView
             android:id="@+id/textTestemunho"
@@ -126,7 +127,7 @@
             app:layout_constraintEnd_toStartOf="@+id/textTestemunho"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/key_file_svgrepo_com" />
+            app:srcCompat="@drawable/ic_app" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
